@@ -9,20 +9,7 @@ import { BrainEngine, LocationDot, brainOutline } from "@/lib/lottieExports";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-background">
-      <nav
-        className="flex fixed w-full justify-between items-center px-10 h-16 bg-opacity-30 border-b border-gray-200 backdrop-filter backdrop-blur-lg shadow-sm z-50"
-        role="navigation"
-      >
-        <Brain className="h-8 w-8 stroke-1" />
-        <div className="hidden sm:grid grid-flow-col items-center gap-6">
-          <NavigationLink href="/shrink/login">Sou Terapeuta</NavigationLink>
-          <NavigationLink href="/shrink/login">Sobre Nós</NavigationLink>
-          <Link href="/shrink/login">
-            <Button variant={"outline"}>Encontre seu terapeuta</Button>
-          </Link>
-        </div>
-      </nav>
+    <div className="flex flex-col">
       <main className="">
         <Section className="flex flex-col items-center mt-10 justify-center h-screen">
           <div className="grid auto-rows-auto flex-col gap-4 md:grid-cols-2 md:grid-rows-3">
