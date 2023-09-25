@@ -1,29 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
-
-/* width */
-::-webkit-scrollbar {
-  width: 5px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  margin: 10px 0;
-  background: var(--foreground);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #888;
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
 
 @layer base {
   :root {
@@ -70,4 +47,13 @@
     --input: 12 6.5% 15.1%;
     --ring: 24 5.7% 82.9%;
   }
+}
+
+.rdp-vhidden {
+  @apply hidden;
+}
+
+.rdp-caption_dropdowns {
+  display: flex;
+  gap: 0.5rem;
 }

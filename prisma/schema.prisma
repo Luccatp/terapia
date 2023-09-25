@@ -13,7 +13,7 @@ model User {
   email     String     @unique
   password  String
   verified  Boolean    @default(false)
-  image     String
+  image     String?
   birthday  DateTime
   createdAt DateTime   @default(now())
   updatedAt DateTime   @updatedAt
@@ -22,7 +22,8 @@ model User {
 
 model Therapist {
   id            String         @id
-  expertise     String[]
+  phoneNumber   String
+  expertise     String
   daysAvailable String[]
   description   String
   price         String
@@ -35,13 +36,13 @@ model Therapist {
 
 model Psychologist {
   id        String    @id
-  CRP       String
+  CRP       String    @unique
   Therapist Therapist @relation(fields: [id], references: [id])
 }
 
 model Psychiatrist {
   id        String    @id
-  CRM       String
+  CRM       String    @unique
   Therapist Therapist @relation(fields: [id], references: [id])
 }
 

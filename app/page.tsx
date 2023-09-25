@@ -12,7 +12,7 @@ export default function Home() {
     <div className="flex flex-col">
       <main className="">
         <Section className="flex flex-col items-center mt-10 justify-center h-screen">
-          <div className="grid auto-rows-auto flex-col gap-4 md:grid-cols-2 md:grid-rows-3">
+          <div className="grid auto-rows-auto gap-4 md:grid-cols-2 md:grid-rows-3">
             <div className="md:row-span-2 md:self-center md:gap-2 md:grid">
               <h1 className="text-5xl font-bold text-center text-gray-800 lg:text-7xl">
                 Saúde Mental é a da sua vida

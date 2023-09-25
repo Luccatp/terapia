@@ -2,6 +2,7 @@ import Navbar from "@/components/layout/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +21,7 @@ export default function RootLayout({
       <body className={`${inter.className} bg-background`}>
         <Navbar />
         {children}
+        <Toaster />
       </body>
     </html>
   );
